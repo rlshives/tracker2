@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+	this.resource('questions');
+	this.resource('multiplechoice');
 });
 
 export default Router;

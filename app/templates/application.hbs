@@ -1,3 +1,19 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<div class="jumbotron">
+	<div class="container">
+		<!-- <a href="#"><img src="assets/images/candrsolutionsblue.gif" alt="Banner" border=0/></a> -->
+		<h2 id='title'>Welcome to Symptom Tracker</h2>
+		<p>Click on the Get Started link to select symptoms.</p>
+	</div>
+</div>
+
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+		<ul id="headNav" class="nav nav-pills pull-left">
+			<li>{{#link-to 'multiplechoice'}}Get Started{{/link-to}}</li>
+			<li><a {{ action 'clearAll' this }}>Clear All Fields</a></li>
+			<li><a href="#">Test, Talk to me</a></li>
+		</ul>
+	</div>
+</nav>
 
 {{outlet}}
