@@ -1,12 +1,12 @@
 import DS from 'ember-data';
 
-var Lily = DS.Model.extend({
+var Multiplechoice = DS.Model.extend({
 	text: DS.attr('string'),
 	context: DS.attr('string'),
 	choices: DS.attr()
 });
 
-Lily.reopenClass ({
+Multiplechoice.reopenClass ({
 	FIXTURES: [
 		{ id: 1, text: "Did you have any of the following symptoms today as a result of your MS? Please indicate Yes by checking the box.", context: 0,
 		choices: [
@@ -28,4 +28,4 @@ Lily.reopenClass ({
 	]
 });
 
-export default Lily;
+export default Multiplechoice;
